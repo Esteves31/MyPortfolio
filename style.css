@@ -11,6 +11,7 @@ body {
     background: #f7fff7;
     min-height: 100vh;
     overflow-x: hidden;
+    text-align: justify;
 }
 
 header {
@@ -27,14 +28,14 @@ header {
 
 .logo {
     font-size: 2em;
-    color: #3f5e5a;
+    color: #014698;
     pointer-events: none;
     margin-right: 270px;
 }
 
 .navigation a {
     text-decoration: none;
-    color: #3f5e5a;
+    color: #014698;
     padding: 6px 15px;
     border-radius: 20px;
     margin: 0 10px;
@@ -43,7 +44,7 @@ header {
 
 .navigation a:hover,
 .navigation a.active {
-    background: #3f5e5a;
+    background: #014698;
     color: #ffffff;
 }
 
@@ -61,11 +62,13 @@ header {
 #text {
     font-size: 5em;
     color: #333;
+    z-index: 10;
 }
 
 #subtitle {
     font-size: 3em;
     color: #444;
+    z-index: 10;
 }
 
 .parallax div {
@@ -74,19 +77,14 @@ header {
 }
 
 .parallax img {
-    width: 300px; /* Ajuste o tamanho da imagem conforme necessário */
+    width: 500px;
     position: relative;
     pointer-events: none;
 }
 
-#airplane {
-    width: 400px;
-    padding-right: 50px;
-}
-
 .sec {
     position: relative;
-    background: #3f5e5a;
+    background: #014698;
     padding: 100px;
 }
 
@@ -170,24 +168,33 @@ header {
 
 .projects-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.project-card {
-    position: relative;
+    align-items: center;
+    justify-content: space-between;
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     transition: transform 0.3s;
 }
 
-.project-card:hover {
+.projects-container #lp {
+    width: 100px; /* Ajuste conforme necessário */
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin: 10px;
+    margin-left: 20px;
+}
+
+.project-card {
+    position: relative;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+
+.projects-container:hover {
     transform: scale(1.05);
 }
 
@@ -199,16 +206,25 @@ header {
     margin-bottom: 10px;
 }
 
+.project-card ul {
+    padding-left: 30px;
+}
+
+.project-card h3 {
+    font-size: 2em;
+    color: #333;
+}
+
 .tech-container {
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
 }
 
 .tech-container h4 {
     margin-right: 10px; /* Espaçamento entre o h4 e as imagens */
     white-space: nowrap; /* Impede a quebra de linha no h4 */
+    color: #333;
 }
 
 @media (max-width: 768px) {
