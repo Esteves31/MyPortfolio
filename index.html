@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio Embraer</title>
     <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+  />
 </head>
 
 <body>
@@ -113,36 +117,153 @@
         </div>
 
         <h2>Meus Projetos</h2>
-        <div class="projects-container">
-            <div class="project-card">
-                <h3>WiRedPanda</h3>
-                <p>
-                    Um simulador de circuitos lógicos que visa ajudar as pessoas a assimilarem os conceitos 
-                    aprendidos em circuitos digitais. Estou atualmente neste projeto de extensão e nele tive 
-                    a oportunidade de desenvolver uma feature de Tabela Verdade dos elementos lógicos. Desenvolvendo
-                    habilidades em C++, Qt e trabalho em equipe. Veja mais sobre o projeto: 
-                    <ul>
-                        <li><a href="https://gibis-unifesp.github.io/wiRedPanda/">página web do WiRedPanda</a></li>
-                        <li><a href="https://github.com/GIBIS-UNIFESP/wiRedPanda">página do GitHub</a></li>
-                    </ul>
-                </p>
-                <div class="tech-container">
-                    <h4>Tecnologias utilizadas: </h4>
-                    <img src="Imgs/qt.png" alt="Qt">
-                    <img src="Imgs/git.png" alt="Git">
-                    <img src="Imgs/github.png" alt="Github">
+        
+        <div class="swiper">
+            <div class="swiper-wrapper">    
+                <div class="swiper-slide">
+                    <div class="projects-container">
+                        <div class="project-card">
+                            <h3>WiRedPanda</h3>
+                            <p>
+                                Um simulador de circuitos lógicos que visa ajudar as pessoas a assimilarem os conceitos 
+                                aprendidos em circuitos digitais. Estou atualmente neste projeto de extensão e nele tive 
+                                a oportunidade de desenvolver uma feature de Tabela Verdade dos elementos lógicos. Desenvolvendo
+                                habilidades em C++, Qt e trabalho em equipe. Veja mais sobre o projeto: 
+                                <ul>
+                                    <li><a href="https://gibis-unifesp.github.io/wiRedPanda/">página web do WiRedPanda</a></li>
+                                    <li><a href="https://github.com/GIBIS-UNIFESP/wiRedPanda">página do GitHub</a></li>
+                                </ul>
+                            </p>
+                            <div class="tech-container">
+                                <h4>Tecnologias utilizadas: </h4>
+                                <img src="Imgs/qt.png" alt="Qt">
+                                <img src="Imgs/git.png" alt="Git">
+                                <img src="Imgs/github.png" alt="Github">
+                            </div>
+                        </div>
+                        <img src="Imgs/cpp.png" alt="C++" id="lp">
+                    </div>
                 </div>
+                <div class="swiper-slide">
+                    <div class="projects-container">
+                        <div class="project-card">
+                            <h3>Monitoria de LP</h3>
+                            <p>
+                                Durante o ano de 2022, fui monitor da matéria de Lógica de Programação, utilizando a linguagem C. 
+                                Neste período tive a oportunidade de ajudar alunos com dificuldades com atividades de lógica e 
+                                sintaxe da linguagem, como variáveis, laços de repetição, funções e operações aritméticas. 
+                                Um momento no qual ensinei e aprendi muito também.
+                                <ul>
+                                    <li><a href="https://github.com/Esteves31/Monitoria-LP-2023_1">Repositório de exercícios</a></li>
+                                </ul>
+                            </p>
+                            <div class="tech-container">
+                                <h4>Tecnologias utilizadas: </h4>
+                                <img src="Imgs/git.png" alt="Git">
+                                <img src="Imgs/github.png" alt="Github">
+                            </div>
+                        </div>
+                        <img src="Imgs/c.png" alt="C" id="lp">
+                    </div>  
+                </div>
+                <div class="swiper-slide">
+                    <div class="projects-container">
+                        <div class="project-card">
+                            <h3>PCMaker</h3>
+                            <p>
+                                Um site para ajudar na escolha de peças de computadores, que recebe como entrada os jogos que o 
+                                usuário quer jogar. Neste projeto trabalhei na parte do Front-End, utilizando JavaScript, React, 
+                                Node.js, HTML e CSS. Tendo a oportunidade também de tabalhar com Scrum e por um período ser Scrum Master, e utilizar 
+                                também a plataforma Monday.com para fazer o fluxo de trabalho.
+                                <ul>
+                                    <li><a href="https://gibis-unifesp.github.io/wiRedPanda/">página web do PCMaker</a></li>
+                                    <li><a href="https://github.com/Mugiwara-Thomas/PCMaker">página do GitHub</a></li>
+                                </ul>
+                            </p>
+                            <div class="tech-container">
+                                <h4>Tecnologias utilizadas: </h4>
+                                <img src="Imgs/html.png" alt="Html">
+                                <img src="Imgs/css.png" alt="css">
+                                <img src="Imgs/node.png" alt="Node">
+                                <img src="Imgs/react.png" alt="Qt">
+                                <img src="Imgs/git.png" alt="Git">
+                                <img src="Imgs/github.png" alt="Github">
+                            </div>
+                        </div>
+                        <img src="Imgs/js.png" alt="C++" id="lp">
+                    </div>  
+                </div>
+                <div class="swiper-slide">
+                    <div class="projects-container">
+                        <div class="project-card">
+                            <h3>To-do List</h3>
+                            <p>
+                                To-do list é uma aplicação de uma lista de afazeres, na qual o usuário pode criar tarefas, 
+                                verificar as que já foram feitas, constar quais ainda faltam ser realizadas e assim fazer 
+                                o checklist de suas atividades. Para isso utilizei a linguagem python, além de também fazer 
+                                uso de TDD (Test Driven Development), para a criação de testes automatizados.
+                                <ul>
+                                    <li><a href="https://github.com/Esteves31/Todo_list">página do GitHub</a></li>
+                                </ul>
+                            </p>
+                            <div class="tech-container">
+                                <h4>Tecnologias utilizadas: </h4>
+                                <img src="Imgs/git.png" alt="Git">
+                                <img src="Imgs/github.png" alt="Github">
+                            </div>
+                        </div>
+                        <img src="Imgs/python.png" alt="python" id="lp">
+                    </div>  
+                </div>
+                <div class="swiper-slide">
+                    <div class="projects-container">
+                        <div class="project-card">
+                            <h3>Dashboard de vendas</h3>
+                            <p>
+                                Neste projeto, utilizei de uma base de dados de uma loja de eletrônicos fictícia, para 
+                                montar um relatório de vendas e apontar alguns indicadores de vendas, como produto mais 
+                                vendido, gráfico de comparação de vendas entre produtos, entre gênero de compradores e 
+                                cidades, deixando de forma mais visual a análise de dados da loja.
+                            </p>
+                            <div class="tech-container">
+                                <h4>Tecnologias utilizadas: </h4>
+                                <img src="Imgs/excel.png" alt="Excel">
+                                <img src="Imgs/bi.png" alt="Power">
+                            </div>
+                        </div>
+                        <img src="Imgs/bi.png" alt="Power BI" id="lp">
+                    </div>  
+                </div>
+
             </div>
-            <img src="Imgs/cpp.png" alt="C++" id="lp">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            
         </div>
     </section>
 
-    <section class="pillars" id="pillars">
-        <h2 id="text">Diário de bordo</h2>
-        <h3 id="subtitle">Uma viagem pelo meu portfólio</h3>
-        <img src="Imgs/airplane.png" id="airplane">   
+    <section class="sec" id="pillars">
+        <h2>Uma Embraer, um só time</h2> 
+        <div class="content">
+            <p>
+                Sempre acreditei que saber trabalhar em equipe é uma habilidade de extrema
+                importância. Das experiências que tive até hoje, escolares, universitárias 
+                e do Tiro de Guerra que passei em Jacareí, todas sempre mostraram que saber 
+                conversar, delegar de maneira coerente as tarefas para o grupo, confiar que 
+                cada um dos integrantes irá fazer seu papel designado, mas ajudar caso seja 
+                necessaŕio, sempre tornará o trabalho mais tranquilo, mais produtivo e produz 
+                resultados melhores no fim. O pilar 'Uma Embraer, um só time' é o pilar que 
+                mais combina com os valores que eu tenho, e por isso escolhi para representar. 
+                Tendo ele como base sei que poderei contar com meus companheiros para me ajudar 
+                em problemas que virão, culminando em um trabalho bem feito no final e agregando 
+                positivamente para a empresa e seus stakeholders e impulsionar o meu desenvolvimento.
+            </p>
+            <img src="Imgs/equip.jpeg" alt="">
+        </div>
     </section>
 
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 

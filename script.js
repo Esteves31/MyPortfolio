@@ -6,6 +6,7 @@ window.addEventListener('scroll', () => {
     airplane.style.left = value * -1.5 + 'px';
 });
 
+
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('nav a').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
@@ -18,3 +19,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+var swiper = new Swiper(".swiper", {
+    cssMode: true,
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    keyboard: true,
+  });
