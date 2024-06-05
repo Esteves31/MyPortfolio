@@ -107,10 +107,14 @@ header img {
 }
 
 .sec img {
-    width: 400px; /* Ajuste conforme necessário */
+    width: 350px; /* Ajuste conforme necessário */
     height: auto;
     border-radius: 20px; /* Bordas arredondadas para a imagem */
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#second {
+    width: 380px;
 }
 
 .skills {
